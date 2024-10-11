@@ -9,7 +9,6 @@ import idyntree.swig as idyntree
 import numpy as np
 import pytest
 
-from adam import Representations
 from adam.geometry import utils
 from adam.numpy import KinDynComputations
 

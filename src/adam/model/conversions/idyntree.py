@@ -1,11 +1,11 @@
+from typing import List
+
 import idyntree.bindings
 import numpy as np
 import urdf_parser_py.urdf
-from typing import List
 
-
+from adam.model.abc_factories import Joint, Link
 from adam.model.model import Model
-from adam.model.abc_factories import Link, Joint
 
 
 def to_idyntree_solid_shape(

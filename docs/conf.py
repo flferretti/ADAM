@@ -59,7 +59,7 @@ autodoc_member_order = "bysource"
 templates_path = ["_templates"]
 exclude_patterns = []
 
-html_title = f"adam"
+html_title = "adam"
 
 
 # -- Options for HTML output -------------------------------------------------

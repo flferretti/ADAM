@@ -1,7 +1,8 @@
-import pathlib
-from typing import List
-import xml.etree.ElementTree as ET
 import os
+import pathlib
+import xml.etree.ElementTree as ET
+from typing import List
+
 import urdf_parser_py.urdf
 
 from adam.core.spatial_math import SpatialMath

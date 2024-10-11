@@ -3,20 +3,16 @@
 # GNU Lesser General Public License v2.1 or any later version.
 
 import logging
-from os import link
-import urdf_parser_py.urdf
-import jax.numpy as jnp
 from jax import config
 import numpy as np
 import pytest
-import math
+import casadi as cs
 from adam.parametric.jax import KinDynComputationsParametric
 from adam.jax import KinDynComputations
 
 from adam.geometry import utils
 import tempfile
 from git import Repo
-from adam import Representations
 
 np.random.seed(42)
 config.update("jax_enable_x64", True)

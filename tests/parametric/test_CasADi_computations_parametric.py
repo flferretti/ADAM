@@ -3,18 +3,15 @@
 # GNU Lesser General Public License v2.1 or any later version.
 
 import logging
-from os import link
 import casadi as cs
 import numpy as np
 import pytest
-import math
 from adam.parametric.casadi import KinDynComputationsParametric
 from adam.casadi import KinDynComputations
 
 from adam.geometry import utils
 import tempfile
 from git import Repo
-from adam import Representations
 
 # Getting stickbot urdf file
 temp_dir = tempfile.TemporaryDirectory()

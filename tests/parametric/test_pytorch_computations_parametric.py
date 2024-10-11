@@ -3,20 +3,15 @@
 # GNU Lesser General Public License v2.1 or any later version.
 
 import logging
-from os import link
-import urdf_parser_py.urdf
 import pytest
-import math
 import torch
 import numpy as np
 from adam.parametric.pytorch import KinDynComputationsParametric
 from adam.pytorch import KinDynComputations
 from adam.pytorch.torch_like import SpatialMath
 
-from adam.geometry import utils
 import tempfile
 from git import Repo
-from adam import Representations
 
 np.random.seed(42)
 torch.set_default_dtype(torch.float64)

@@ -3,10 +3,8 @@
 # GNU Lesser General Public License v2.1 or any later version.
 
 import logging
-from os import link
-import urdf_parser_py.urdf
 import pytest
-import math
+import casadi as cs
 import numpy as np
 from adam.parametric.numpy import KinDynComputationsParametric
 from adam.numpy import KinDynComputations
@@ -14,7 +12,6 @@ from adam.numpy import KinDynComputations
 from adam.geometry import utils
 import tempfile
 from git import Repo
-from adam import Representations
 
 np.random.seed(42)
 

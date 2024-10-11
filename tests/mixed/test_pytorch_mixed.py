@@ -11,7 +11,6 @@ import pytest
 import torch
 
 from adam import Representations
-from adam.geometry import utils
 from adam.pytorch import KinDynComputations
 from adam.pytorch.torch_like import SpatialMath
 

@@ -1,11 +1,10 @@
-import pathlib
 from typing import List
-import os
 
 import urdf_parser_py.urdf
+
 from adam.core.spatial_math import SpatialMath
-from adam.model import ModelFactory, StdJoint, StdLink, Link, Joint
-from adam.model.std_factories.std_model import urdf_remove_sensors_tags, get_xml_string
+from adam.model import Joint, Link, ModelFactory, StdJoint, StdLink
+from adam.model.std_factories.std_model import get_xml_string, urdf_remove_sensors_tags
 from adam.parametric.model import ParametricJoint, ParametricLink
 
 

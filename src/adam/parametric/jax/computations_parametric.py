@@ -6,13 +6,12 @@ from typing import List
 
 import jax.numpy as jnp
 import numpy as np
-from jax import grad, jit, vmap
 
-from adam.core.rbd_algorithms import RBDAlgorithms
 from adam.core.constants import Representations
+from adam.core.rbd_algorithms import RBDAlgorithms
 from adam.jax.jax_like import SpatialMath
 from adam.model import Model
-from adam.parametric.model import URDFParametricModelFactory, ParametricLink
+from adam.parametric.model import ParametricLink, URDFParametricModelFactory
 
 
 class KinDynComputationsParametric:

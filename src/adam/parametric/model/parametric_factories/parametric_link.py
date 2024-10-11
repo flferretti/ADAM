@@ -1,12 +1,12 @@
+import copy
+import math
+from enum import Enum
+
 import numpy.typing as npt
 import urdf_parser_py.urdf
-from enum import Enum
-import copy
 
 from adam.core.spatial_math import SpatialMath
 from adam.model import Link
-
-import math
 from adam.model.abc_factories import Inertia, Inertial
 
 
@@ -74,7 +74,7 @@ class ParametricLink(Link):
         elif self.geometry_type == Geometry.BOX:
             v_l = self.visual_data.size[2]
         else:
-            raise Exception(f"THE GEOMETRY IS NOT SPECIFIED")
+            raise Exception("THE GEOMETRY IS NOT SPECIFIED")
         return v_l
 
     def get_principal_length_parametric(self):
@@ -94,7 +94,7 @@ class ParametricLink(Link):
         elif self.geometry_type == Geometry.BOX:
             v_l = self.visual_data_new[2]
         else:
-            raise Exception(f"THE GEOMETRY IS NOT SPECIFIED")
+            raise Exception("THE GEOMETRY IS NOT SPECIFIED")
         return v_l
 
     def compute_offset(self):

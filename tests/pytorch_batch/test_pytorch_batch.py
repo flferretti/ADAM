@@ -1,10 +1,5 @@
-import logging
-
 import icub_models
-import idyntree.swig as idyntree
-import jax.numpy as jnp
 import numpy as np
-import pytest
 from jax import config
 
 import adam

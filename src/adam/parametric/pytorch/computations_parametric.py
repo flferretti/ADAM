@@ -2,14 +2,15 @@
 # This software may be modified and distributed under the terms of the
 # GNU Lesser General Public License v2.1 or any later version.
 
-import numpy as np
-import torch
 from typing import List
 
-from adam.core.rbd_algorithms import RBDAlgorithms
+import numpy as np
+import torch
+
 from adam.core.constants import Representations
+from adam.core.rbd_algorithms import RBDAlgorithms
 from adam.model import Model
-from adam.parametric.model import URDFParametricModelFactory, ParametricLink
+from adam.parametric.model import ParametricLink, URDFParametricModelFactory
 from adam.pytorch.torch_like import SpatialMath
 
 

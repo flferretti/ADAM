@@ -2,9 +2,10 @@
 # This software may be modified and distributed under the terms of the
 # GNU Lesser General Public License v2.1 or any later version.
 
+from typing import Union
+
 import casadi as cs
 import numpy as np
-from typing import Union
 
 from adam.casadi.casadi_like import SpatialMath
 from adam.core import RBDAlgorithms
